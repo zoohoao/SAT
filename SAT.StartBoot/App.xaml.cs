@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SAT.StartBoot.Boot;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,18 @@ namespace SAT.StartBoot
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            try
+            {
+                var StartBoot = new StartBootView();
+                StartBoot.DataContext = new ViewModelLoactor().StartBootMode;
+                StartBoot.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

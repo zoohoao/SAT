@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Image", "SAT.Image\SAT.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Router", "SAT.Router\SAT.Router.csproj", "{2244ADC4-79A2-40F7-AB27-C63089A07175}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Modules", "Module\SAT.Modules.csproj", "{450BCE2F-FE84-4261-B352-020141AD8F04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{2244ADC4-79A2-40F7-AB27-C63089A07175}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2244ADC4-79A2-40F7-AB27-C63089A07175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2244ADC4-79A2-40F7-AB27-C63089A07175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450BCE2F-FE84-4261-B352-020141AD8F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450BCE2F-FE84-4261-B352-020141AD8F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450BCE2F-FE84-4261-B352-020141AD8F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450BCE2F-FE84-4261-B352-020141AD8F04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

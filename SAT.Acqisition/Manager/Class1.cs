@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAT.Interface
+namespace SAT.Acqisition.Manager
 {
-    public class Class1
+    class Class1
     {
     }
 }
