@@ -1,4 +1,5 @@
 ﻿using SAT.Interface;
+using SAT.Share.SATLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.34601.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Helps", "SAT.Helps\SAT.Helps.csproj", "{7ECE13AF-9077-4AD6-92B2-D213FA46F770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Share", "SAT.Share\SAT.Share.csproj", "{F2104FCB-586F-4EE0-A381-0076DD0CCE9C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Interface", "SAT.Interface\SAT.Interface.csproj", "{A115E023-58E1-41E7-8B04-D6729C5A65E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Communication", "SAT.Communication\SAT.Communication.csproj", "{7E965C40-597B-4A92-83F3-2BE0D88D0A29}"
@@ -33,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Router", "SAT.Router\SA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Modules", "SAT.Modules\SAT.Modules.csproj", "{162B2F2D-166E-4146-8EF6-8A5DCA90BCC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAT.Share", "SAT.Share\SAT.Share.csproj", "{4307F1C2-9493-4C39-AB35-2BC693A090A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +43,6 @@ Global
 		{7ECE13AF-9077-4AD6-92B2-D213FA46F770}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECE13AF-9077-4AD6-92B2-D213FA46F770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ECE13AF-9077-4AD6-92B2-D213FA46F770}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2104FCB-586F-4EE0-A381-0076DD0CCE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2104FCB-586F-4EE0-A381-0076DD0CCE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2104FCB-586F-4EE0-A381-0076DD0CCE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2104FCB-586F-4EE0-A381-0076DD0CCE9C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A115E023-58E1-41E7-8B04-D6729C5A65E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A115E023-58E1-41E7-8B04-D6729C5A65E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A115E023-58E1-41E7-8B04-D6729C5A65E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +95,10 @@ Global
 		{162B2F2D-166E-4146-8EF6-8A5DCA90BCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{162B2F2D-166E-4146-8EF6-8A5DCA90BCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{162B2F2D-166E-4146-8EF6-8A5DCA90BCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4307F1C2-9493-4C39-AB35-2BC693A090A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4307F1C2-9493-4C39-AB35-2BC693A090A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4307F1C2-9493-4C39-AB35-2BC693A090A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4307F1C2-9493-4C39-AB35-2BC693A090A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

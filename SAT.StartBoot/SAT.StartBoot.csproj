@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F89C9340-A7E3-4D17-9F3F-9B3562479911}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>SAT.StartBoot</RootNamespace>
     <AssemblyName>SAT.StartBoot</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -33,6 +33,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=8.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
@@ -138,6 +141,10 @@
     <ProjectReference Include="..\SAT.Modules\SAT.Modules.csproj">
       <Project>{162B2F2D-166E-4146-8EF6-8A5DCA90BCC5}</Project>
       <Name>SAT.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAT.Share\SAT.Share.csproj">
+      <Project>{4307F1C2-9493-4C39-AB35-2BC693A090A2}</Project>
+      <Name>SAT.Share</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
