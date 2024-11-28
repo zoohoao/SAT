@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAT.Helps
+namespace SAT.Helps.SsytemOperation
 {
-    public class Class1
+    public class SATRegistry
     {
     }
 }

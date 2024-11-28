@@ -44,11 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SsytemOperation\ComputerInfo.cs" />
+    <Compile Include="SsytemOperation\FileManager.cs" />
+    <Compile Include="SsytemOperation\SATRegistry.cs" />
+    <Compile Include="SsytemOperation\SystemAPI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

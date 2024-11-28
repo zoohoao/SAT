@@ -61,5 +61,10 @@
       <Name>SAT.Interface</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonMethods\" />
+    <Folder Include="Extention\" />
+    <Folder Include="Math\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
