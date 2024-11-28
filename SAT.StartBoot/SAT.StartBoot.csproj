@@ -134,6 +134,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SAT.Core\SAT.Core.csproj">
+      <Project>{E0714068-AF18-4E22-A04B-38122101C292}</Project>
+      <Name>SAT.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SAT.Interface\SAT.Interface.csproj">
       <Project>{A115E023-58E1-41E7-8B04-D6729C5A65E6}</Project>
       <Name>SAT.Interface</Name>

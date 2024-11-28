@@ -1,5 +1,5 @@
-﻿using SAT.Interface;
-using SAT.Share.SATLog;
+﻿using SAT.Core.Common;
+using SAT.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace SAT.StartBoot.Boot
 {
-    internal class StartBootViewModel
+    internal class StartBootViewModel : SATLog
     {
         private readonly IAcquisitionManager _acquisitionManager;
         private readonly IMotionManager _motionManager;
@@ -26,6 +26,7 @@ namespace SAT.StartBoot.Boot
 
         public void StartSystem()
         {
+            Trace_Log("dfdfdfdf");
             MessageBox.Show("IOC DI.");
             Console.WriteLine("System starting...");
         }

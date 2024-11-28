@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ISATLog.cs" />
     <Compile Include="Interface\IAcquisitionManager.cs" />
     <Compile Include="Interface\IMotionManager.cs" />
     <Compile Include="Interface\IPulseManager.cs" />

@@ -1,11 +1,15 @@
 ﻿using NLog;
 
-namespace SAT.Share.SATLog
+namespace SAT.Core.Common
 {
     public class SATLog
     {
-        private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
+        private static ILogger Logger = LogManager.GetCurrentClassLogger();
 
+        /// <summary>
+        /// 控制台打印
+        /// </summary>
+        /// <param name="Message"></param>
         public static void Trace_Log(string Message)
         {
             Logger.Trace(Message);
@@ -26,6 +30,10 @@ namespace SAT.Share.SATLog
             Logger.Warn(Message);
         }
 
+        /// <summary>
+        /// 独属错误日志
+        /// </summary>
+        /// <param name="Message"></param>
         public static void Error_Log(string Message)
         {
             Logger.Error(Message);
