@@ -1,11 +1,7 @@
 ﻿using SAT.Core.Common;
+using SAT.Helps.SsytemOperation;
 using SAT.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+using SAT.Interface.Common;
 using System.Windows.Input;
 
 namespace SAT.StartBoot.Boot
@@ -14,9 +10,12 @@ namespace SAT.StartBoot.Boot
     {
         private readonly IAcquisitionManager _acquisitionManager;
         private readonly IMotionManager _motionManager;
+        private readonly IHelpsHandlers _helpsHandlers;
 
-        public StartBootViewModel(IAcquisitionManager acquisitionManager, IMotionManager motionManager)
+        public StartBootViewModel(IAcquisitionManager acquisitionManager, IMotionManager motionManager,
+            IHelpsHandlers helpsHandlers)
         {
+            _helpsHandlers = helpsHandlers;
             _acquisitionManager = acquisitionManager;
             _motionManager = motionManager;
             StartSystemCommand = new RelayCommand(StartSystem);
@@ -26,9 +25,10 @@ namespace SAT.StartBoot.Boot
 
         public void StartSystem()
         {
+            ConfigManager a = (ConfigManager)_helpsHandlers.GetConfigManager();
+            a.ConfigSetting();
             Trace_Log("dfdfdfdf");
-            MessageBox.Show("IOC DI.");
-            Console.WriteLine("System starting...");
+            _acquisitionManager.Collect();
         }
     }
 }

@@ -63,8 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CommonMethods\" />
+    <Folder Include="Core\" />
     <Folder Include="Extention\" />
-    <Folder Include="Math\" />
+    <Folder Include="Handler\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

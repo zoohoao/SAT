@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\AcquisitionManagerModule.cs" />
+    <Compile Include="Components\HelpsHandlersManager.cs" />
     <Compile Include="Components\MotionManagerModule.cs" />
     <Compile Include="Components\PulseManagerModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +80,10 @@
     <ProjectReference Include="..\SAT.Core\SAT.Core.csproj">
       <Project>{E0714068-AF18-4E22-A04B-38122101C292}</Project>
       <Name>SAT.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAT.Helps\SAT.Helps.csproj">
+      <Project>{7ECE13AF-9077-4AD6-92B2-D213FA46F770}</Project>
+      <Name>SAT.Helps</Name>
     </ProjectReference>
     <ProjectReference Include="..\SAT.Interface\SAT.Interface.csproj">
       <Project>{A115E023-58E1-41E7-8B04-D6729C5A65E6}</Project>

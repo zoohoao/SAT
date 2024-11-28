@@ -1,10 +1,5 @@
 ﻿using Autofac;
 using SAT.Modules.Components;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SAT.StartBoot.Boot
 {
@@ -21,6 +16,7 @@ namespace SAT.StartBoot.Boot
             builder.RegisterModule<AcquisitionManagerModule>();
             builder.RegisterModule<MotionManagerModule>();
             builder.RegisterModule<PulseManagerModule>();
+            builder.RegisterModule<HelpsHandlersManager>();
             //// 注册 ViewModel
             builder.RegisterType<StartBootViewModel>();
             _container = builder.Build();

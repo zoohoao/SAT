@@ -12,5 +12,10 @@ namespace SAT.Acqisition.Manager
             _motionManager = motionManager;
             _pulseManager = pulseManager;
         }
+
+        public void Collect()
+        {
+            System.Console.WriteLine("ACQ collect");
+        }
     }
 }

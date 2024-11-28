@@ -1,9 +1,9 @@
 ﻿namespace SAT.Helps.SsytemOperation
 {
     /// <summary>
-    /// 资源管理器
+    /// 加密解密管理器
     /// </summary>
-    public class ResourceManager
+    public class CryptoManager
     {
     }
 }
