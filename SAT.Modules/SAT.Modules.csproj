@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{450BCE2F-FE84-4261-B352-020141AD8F04}</ProjectGuid>
+    <ProjectGuid>{162B2F2D-166E-4146-8EF6-8A5DCA90BCC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SAT.Modules</RootNamespace>
@@ -72,10 +72,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\SAT.Acqisition\SAT.Acqisition.csproj">
       <Project>{33AB64B3-A365-4321-9F13-48757706E5AC}</Project>
       <Name>SAT.Acqisition</Name>
@@ -92,6 +88,10 @@
       <Project>{2B48DF52-350A-4F6A-B98E-BCECF2295B70}</Project>
       <Name>SAT.Pulser</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
