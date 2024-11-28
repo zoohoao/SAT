@@ -7,8 +7,8 @@
     <ProjectGuid>{450BCE2F-FE84-4261-B352-020141AD8F04}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Module</RootNamespace>
-    <AssemblyName>Module</AssemblyName>
+    <RootNamespace>SAT.Module</RootNamespace>
+    <AssemblyName>SAT.Module</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
