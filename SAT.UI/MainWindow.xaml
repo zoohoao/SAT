@@ -4,9 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SAT.UI"
-        mc:Ignorable="d"
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <materialDesign:Card Padding="32" Margin="16">
+            <Button Style="{StaticResource MaterialDesignRaisedButton}" Width="80" Height="30" Content="Button" HorizontalAlignment="Center" />
+        </materialDesign:Card>
     </Grid>
 </Window>
