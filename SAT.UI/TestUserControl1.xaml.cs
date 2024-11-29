@@ -1,5 +1,4 @@
-﻿using SAT.StartBoot.Boot;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SAT.StartBoot
+namespace SAT.UI
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// TestUserControl1.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TestUserControl1 : UserControl
     {
-        public MainWindow()
+        public TestUserControl1()
         {
             InitializeComponent();
-            DataContext = new AutofacViewModelLoactor().StartBootMode;
         }
     }
 }

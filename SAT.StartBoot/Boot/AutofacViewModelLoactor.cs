@@ -3,12 +3,12 @@ using SAT.Modules.Components;
 
 namespace SAT.StartBoot.Boot
 {
-    internal class ViewModelLoactor
+    internal class AutofacViewModelLoactor
     {
         private IContainer _container;
         public StartBootViewModel StartBootMode { get; }
 
-        public ViewModelLoactor()
+        public AutofacViewModelLoactor()
         {
             var builder = new ContainerBuilder();
 

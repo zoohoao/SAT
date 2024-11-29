@@ -2,6 +2,7 @@
 using SAT.Helps.SsytemOperation;
 using SAT.Interface;
 using SAT.Interface.Common;
+using System.Windows;
 using System.Windows.Input;
 
 namespace SAT.StartBoot.Boot
@@ -29,6 +30,7 @@ namespace SAT.StartBoot.Boot
             a.ConfigSetting();
             Trace_Log("dfdfdfdf");
             _acquisitionManager.Collect();
+            MessageBox.Show("Test");
         }
     }
 }

@@ -4,8 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SAT.StartBoot"
-        mc:Ignorable="d"
+        xmlns:us="clr-namespace:SAT.UI;assembly=SAT.UI"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Content="Start System" Width="150" Height="50"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Command="{Binding StartSystemCommand}" />
+        <us:TestUserControl1 Grid.Column="1" />
     </Grid>
 </Window>

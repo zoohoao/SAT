@@ -9,18 +9,5 @@ namespace SAT.StartBoot
     /// </summary>
     public partial class App : Application
     {
-        public App()
-        {
-            try
-            {
-                var StartBoot = new StartBootView();
-                StartBoot.DataContext = new ViewModelLoactor().StartBootMode;
-                StartBoot.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }

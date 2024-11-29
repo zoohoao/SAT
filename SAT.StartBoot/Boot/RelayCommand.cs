@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace SAT.StartBoot.Boot
 {
-    internal class RelayCommand : ICommand
+    public class RelayCommand : ICommand
     {
         private readonly Action _execute;
 
