@@ -23,7 +23,6 @@ namespace SAT.StartBoot
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new AutofacViewModelLoactor().StartBootMode;
         }
     }
 }

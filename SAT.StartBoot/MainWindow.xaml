@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:SAT.StartBoot"
         xmlns:us="clr-namespace:SAT.UI;assembly=SAT.UI"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-
         Title="MainWindow" Height="450" Width="800">
 
     <Grid>
@@ -16,7 +15,8 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Button Content="Start System" Width="150" Height="50"
+        <Button   DataContext="{Binding StartBoot,Source={StaticResource ALocator}}"
+                  Content="Start System" Width="150" Height="50"
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Command="{Binding StartSystemCommand}" />
 

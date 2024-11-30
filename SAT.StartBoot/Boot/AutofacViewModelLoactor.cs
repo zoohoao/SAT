@@ -20,8 +20,14 @@ namespace SAT.StartBoot.Boot
             //// 注册 ViewModel
             builder.RegisterType<StartBootViewModel>();
             _container = builder.Build();
+        }
 
-            StartBootMode = _container.Resolve<StartBootViewModel>();
+        public StartBootViewModel StartBoot
+        {
+            get
+            {
+                return _container.Resolve<StartBootViewModel>();
+            }
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using SAT.Interface;
+using SAT.Interface.Core;
 
 namespace SAT.Acqisition.Manager
 {
-    public class AcquisitionManager : IAcquisitionManager
+    public class AcquisitionManager : BaseManager, IAcquisitionManager
     {
         private readonly IMotionManager _motionManager;
         private readonly IPulseManager _pulseManager;

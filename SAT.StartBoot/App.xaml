@@ -2,11 +2,16 @@
 <Application x:Class="SAT.StartBoot.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:avm="clr-namespace:SAT.StartBoot.Boot"
              StartupUri="MainWindow.xaml">
     <!--定义了全局资源，所有在此处声明的资源都可以在整个应用程序中访问，包含样式、控件模板、数据绑定等-->
     <Application.Resources>
         <ResourceDictionary>
+            <!--生成一个该类型的实例化对象-->
+            <avm:AutofacViewModelLoactor x:Key="ALocator" />
+
             <ResourceDictionary.MergedDictionaries>
+                <!--引用其他项目项目下的样式文件，  Source="/程序集component/.xaml"-->
                 <ResourceDictionary Source="/SAT.UI;component/Styles/Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

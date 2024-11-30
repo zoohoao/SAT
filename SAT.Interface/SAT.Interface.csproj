@@ -69,6 +69,8 @@
     <Compile Include="Common\IHelpsHandlers.cs" />
     <Compile Include="Common\IHelpsManager.cs" />
     <Compile Include="Common\ISATLog.cs" />
+    <Compile Include="Core\BaseManager.cs" />
+    <Compile Include="Core\IManager.cs" />
     <Compile Include="Interface\IAcquisitionManager.cs" />
     <Compile Include="Interface\IMotionManager.cs" />
     <Compile Include="Interface\IPulseManager.cs" />
