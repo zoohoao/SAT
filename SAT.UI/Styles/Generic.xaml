@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:SAT.UI.ViewModel">
+
+    <vm:ViewModelLocator x:Key="Locator" />
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/SAT.UI;component/Styles/Material.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

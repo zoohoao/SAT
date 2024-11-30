@@ -1,18 +1,13 @@
-﻿<Application x:Class="SAT.StartBoot.App"
+﻿<!--声明 vm 命名空间，指向 SAT.UI.ViewModel 命名空间中的类，并且指定程序集 SAT.UI，以便在 XAML 中引用该命名空间下的类。-->
+<Application x:Class="SAT.StartBoot.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:vm="clr-namespace:SAT.UI.ViewModel;assembly=SAT.UI"
-             xmlns:vm1="clr-namespace:SAT.StartBoot.Boot;assembly=SAT.StartBoot"
              StartupUri="MainWindow.xaml">
+    <!--定义了全局资源，所有在此处声明的资源都可以在整个应用程序中访问，包含样式、控件模板、数据绑定等-->
     <Application.Resources>
         <ResourceDictionary>
-            <vm:ViewModelLocator x:Key="Locator" />
-
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="/SAT.UI;component/Styles/Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
